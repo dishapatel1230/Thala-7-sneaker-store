@@ -1,56 +1,112 @@
-# Thala-7-sneaker-store
-# 👟 Thala 7 – Sneaker Landing Page
+#  Thala 7 – Sneaker eCommerce UI
 
-A modern, responsive sneaker landing page built using **HTML & CSS**.
-This project showcases a stylish hero section, responsive navigation, and a clean UI design inspired by modern eCommerce websites.
-
----
-
-## 🚀 Features
-
-* Responsive design (Desktop, Tablet, Mobile)
-*  Navigation bar with hamburger menu
-* Hero section with call-to-action button
-*  Stats section (Reviews, Customers, Rating)
-* Clean UI with modern layout
-*  Smooth CSS animations
+A modern, responsive sneaker eCommerce frontend built using **HTML, CSS, and Flexbox**.
+This project includes a complete user flow from landing page → product page → cart → checkout.
 
 ---
 
-## 🛠️ Technologies Used
+##  Live UI Features
 
-* HTML5
-* CSS3 (Flexbox, Media Queries)
+### Landing Page
 
----
-
----
-
-##  Preview
-
-A modern sneaker landing page featuring:
-
-* Bold typography
-* Product highlight (hero section)
-* Clean navigation
-* Responsive layout
+* Hero section with product highlight
+* Call-to-action button (Shop Now)
+* Responsive navigation with hamburger menu
+* Stats section (reviews, customers, rating)
+* Smooth CSS animations
 
 ---
 
-##  Responsive Design
+###  Product Page
 
-The layout adapts to:
-
-*  Desktop screens
-*  Mobile devices
-*  Tablets
+* Product image preview with thumbnails
+* Product description and pricing
+* Quantity selector
+* Add to Cart button
+* Clean two-column layout (Flexbox)
 
 ---
 
-##  How to Run
+### Shopping Cart
 
-1. Download or clone the project
+* Product listing with:
+
+  * Quantity controls (+ / -)
+  * Remove item option
+* Dynamic pricing layout:
+
+  * Subtotal
+  * Taxes
+  * Discount
+  * Total
+* Coupon code input
+* “Continue Shopping” link
+* Razorpay branding for authenticity
+
+---
+
+### Payament Page
+
+* Contact details form (Email input)
+* Payment methods:
+
+  * Card
+  * Netbanking
+  * Bank
+* Card details form:
+
+  * Card number
+  * Expiry date
+  * CVC
+  * Country
+  * ZIP
+* Order summary card
+* Coupon system UI
+* “Pay Now” button
+* Razorpay payment branding
+
+---
+
+## Tech Stack
+
+* **HTML5**
+* **CSS3**
+* **Flexbox (Layout)**
+* **Responsive Design (Media Queries)**
+
+---
+
+## 📂 Project Structure
+
+```id="proj-structure"
+project/
+│── index.html          # Landing Page
+│── product.html        # Product Page
+│── cart.html           # Shopping Cart
+│── payment.html       # Checkout Page
+│── styles.css          # Global Styles
+│── images/             # Product Images
+```
+
+---
+
+## Responsive Design
+
+Fully responsive across:
+
+* Desktop
+* Mobile
+* Tablet
+
+Built using **Flexbox + media queries** for adaptive layouts.
+
+---
+
+## How to Run
+
+1. Download or clone the repository
 2. Open `index.html` in your browser
+3. Navigate through pages manually
 
 ---
 
@@ -58,8 +114,10 @@ The layout adapts to:
 
 You can easily customize:
 
-* Colors using CSS variables (`:root`)
-* Images in the `/images` folder
-* Text content in `index.html`
+* Colors via CSS variables (`:root`)
+* Product images inside `/images`
+* Text content in HTML files
+* Pricing and product details
 
 ---
+
