@@ -6,7 +6,7 @@
     <meta name="description" content="Discover our exclusive sneaker collection! Shop the latest styles and limited releases.">
     <title>Exclusive Sneaker Collection</title>
     <link rel="stylesheet" href="product.css"/>
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
      <header class="header">
@@ -18,11 +18,10 @@
                         ☰
                 </button>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#brands">Brands</a></li>
-                    <li><a href="#more">More</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="payment.html">Checkout</a></li>
                 </ul>
              <div class="nav-icons">
                 <input type="text" name="text" placeholder="Search"/>
@@ -45,11 +44,11 @@
       <img src="./images/shoe.webp" alt="shoe"/>
     </div>
       <div class="thumbnails">
-      <img src="./images/shoe.webp" alt="shoe-image">
-      <img src="./images/shoe1.webp" alt="shoe-image">
-      <img src="./images/shoe2.webp" alt="shoe-image">
-      <img src="./images/shoe3.webp" alt="shoe-image">
-      <img src="./images/shoe4.webp" alt="shoe-image">
+      <img src="./images/shoe.webp" alt="shoe-image" onclick="changeImage(this)">
+      <img src="./images/shoe1.webp" alt="shoe-image" onclick="changeImage(this)">
+      <img src="./images/shoe2.webp" alt="shoe-image" onclick="changeImage(this)">
+      <img src="./images/shoe3.webp" alt="shoe-image" onclick="changeImage(this)">
+      <img src="./images/shoe4.webp" alt="shoe-image" onclick="changeImage(this)">
     </div>
   </div>
 
@@ -77,9 +76,10 @@
         <option>3</option>
       </select>
 
-      <button class="cart-btn">🛒 ADD TO CART</button>
+      <button  onclick="location.href='cart.html'" class="cart-btn">🛒 ADD TO CART</button>
     </div>
   </div>
 </section>
+<script src="script.js"></script>
 </body>
 </html>
