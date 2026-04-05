@@ -197,33 +197,18 @@ body {
     order:3;
   }
 .navbar{
-    display:flex;
-    align-items:center;
-    padding:15px 20px;
+  display:flex;
+  align-items:center;
+  padding:15px 20px;
 }
-.navbar::after{
-content:"";
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.3);
-opacity:0;
-pointer-events:none;
-transition:0.3s;
-}
-.navbar:focus-within::after{
-opacity:1;
-}
-  /* MOBILE MENU */
-    .nav-links {
+/* MOBILE MENU */
+ .nav-links {
     position: absolute;
     top: 80px;
     right:0;
     width: 250px;
     gap:10px;
-    background:var( --secondary-color);
+    background:var(--secondary-color);
     flex-direction: column;
     padding: 20px 0;
     opacity: 0;
@@ -232,15 +217,12 @@ opacity:1;
     transition: 0.3s ease;
     z-index:100;
   }
-  /* show menu when hamburger is focused */
-.hamburger:focus-within + .nav-links{
-    align-items: center;
-    justify-content:center;
-    height:100%;
-    background: #f8f8f8;
-    opacity: 1;
-    pointer-events: auto;
-    transform:translateY(0);
+ 
+/* ACTIVE STATE */
+.nav-links.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 .nav-links a{
 display:block;
@@ -252,47 +234,41 @@ transition:background 0.2s;
 background:#f0f0f0;
 }
 .nav-links li{
-opacity:0;
 transform:translateY(-5px);
 transition:0.3s;
 }
-
-.navbar:focus-within .nav-links li{
-opacity:1;
-transform:translateY(0);
+ 
+.nav-icons input {
+  display: none;
 }
-  .nav-icons input {
-    display: none;
-  }
 
   /* HERO STACK */
-  .hero {
-    padding: 100px 20px 40px;
-  }
-
-  .hero-content {
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content:center;
-    margin-top: 20px;
-  }
-
-  .hero-text h1 {
-    font-size: 28px;
-  }
-
-  .hero-image img {
-    width: 250px;
-  }
-
-  /* STATS STACK */
-  .stats {
-    flex-direction: column;
-    align-items: center;
-  }
+.hero {
+  padding: 100px 20px 40px;
 }
 
+.hero-content {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
+  margin-top: 20px;
+}
+
+.hero-text h1 {
+  font-size: 28px;
+}
+
+.hero-image img {
+  width: 250px;
+}
+
+/* STATS STACK */
+.stats {
+  flex-direction: column;
+  align-items: center;
+}
+}
 
 /* Animation */
 @keyframes fadeUp {

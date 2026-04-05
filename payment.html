@@ -10,23 +10,26 @@
     </head>
     <body>
         <header class="header">
-        <nav class="navbar">
-            <div class="logo">Thala <span>7.</span></div>
-
-            <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="product.html">Product</a></li>
-            <li><a href="cart.html">Cart</a></li>
-            <li><a href="payment.html">Checkout</a></li>
-            </ul>
-
-            <div class="nav-icons">
-            <input type="text" placeholder="Search">
-            <span>🛒</span>
-            <span>👤</span>
-            </div>
-        </nav>
-</header>
+              <nav class="navbar">
+              <div class="logo">Thala <span>7.</span>
+              </div>
+               <!---Hamburger menu--->
+                 <button class="hamburger" id="menuBtn" aria-label="Open navigation menu" aria-controls="main-menu" aria-expanded="false">
+                        ☰
+                </button>
+                <ul class="nav-links" id="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./product.html">Product</a></li>
+                    <li><a href="./cart.html">Cart</a></li>
+                    <li><a href="./payment.html">Checkout</a></li>
+                </ul>
+             <div class="nav-icons">
+                <input type="text" name="text" placeholder="Search"/>
+                <span>🛒</span>
+                <span>👤</span>
+             </div>
+              </nav>      
+       </header>
         <section class="checkout-container">
          <!---Left-->
          <div class="checkout-left">
@@ -38,10 +41,10 @@
                 <h2>Payment</h2>
                 <!--Payment Options-->
                 <div class="payment options">
-                    <button class="active">Credit Card</button>
-                    <button>Debit card</button>
-                    <button>Net Banking</button>
-                    <button>UPI</button>       
+                    <button class="active">💳 Card</button>
+                    <button>₿ Crypto</button>
+                    <button>🏦 Bank</button>
+                    <button>⋯</button>      
                 </div>
                 <!--Card Form-->
                 <div class="card-form">
@@ -96,5 +99,6 @@
                 </div>
          </div>
         </section>
+        <script src="script.js"></script>
     </body>
 </html>
