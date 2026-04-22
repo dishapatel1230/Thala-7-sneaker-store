@@ -1,75 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Welcome to our sneaker store! Find the latest styles and exclusive releases.">
-        <title>Welcome to Our Sneaker Store</title>
-        <link rel="stylesheet" href="styles.css"/>
-    </head>
-    <body>
-       <header class="header">
-              <nav class="navbar">
-              <div class="logo">Thala <span>7.</span>
-              </div>
-               <!---Hamburger menu--->
-                 <button class="hamburger" id="menuBtn" aria-label="Open navigation menu" aria-controls="main-menu" aria-expanded="false">
-                        ☰
-                </button>
-                <ul class="nav-links" id="menu">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./product.html">Product</a></li>
-                    <li><a href="./cart.html">Cart</a></li>
-                    <li><a href="./payment.html">Checkout</a></li>
-                </ul>
-             <div class="nav-icons">
-                <input type="text" name="text" placeholder="Search"/>
-                <span>🛒</span>
-                <span>👤</span>
-             </div>
-              </nav>      
-       </header>
-       <main>
-        <!--Hero section-->
-        <section id="hero"class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <span class="section-title">SEVEN</span>
-                            <h1 class="section-subtitle">7!! Thala For <br> a <span>Reason!</span></h1>
-                            <p>Lorem ipsum dolor sit amet consectetur. Pretium quisque lorem feugiat justo ut orci nisi.</p>
-                            <button class="btn btn-primary" onclick="location.href='product.html'">Shop Now</button>
-                    </div>
-                    <div class="hero-image">
-                    <img src="./images/close-up-futuristic-sneakers.jpg" alt="shoe"/>
-                    </div>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Thala 7 is a modern sneaker storefront concept with a premium landing page, product showcase, cart, and checkout experience."
+    />
+    <title>Thala 7 | Premium Sneaker Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Primary navigation">
+        <a class="logo" href="index.html" aria-label="Thala 7 home">Thala <span>7</span></a>
+
+        <button
+          class="hamburger"
+          id="menuBtn"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="menu">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="payment.html">Checkout</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a class="nav-chip" href="product.html">New Drop</a>
+          <a class="nav-icon" href="cart.html" aria-label="View cart">Cart</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-orb hero-orb-left"></div>
+        <div class="hero-orb hero-orb-right"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Performance. Streetwear. Identity.</p>
+            <h1>Build a sneaker storefront that feels bold enough for a portfolio.</h1>
+            <p class="hero-text">
+              Thala 7 is a concept eCommerce UI for limited sneaker drops, designed with a
+              premium editorial layout, clear conversion flow, and responsive experience.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="product.html">Explore Collection</a>
+              <a class="btn btn-secondary" href="payment.html">Preview Checkout</a>
             </div>
-        </section>
-         <!-- Stats Section -->
-        <section class="stats">
-            <div class="stat">
-                <h2>2k+</h2>
-                <p>Reviews</p>
+            <div class="hero-metrics">
+              <article>
+                <strong>30K+</strong>
+                <span>community members</span>
+              </article>
+              <article>
+                <strong>4.8/5</strong>
+                <span>average product rating</span>
+              </article>
+              <article>
+                <strong>48h</strong>
+                <span>limited-release delivery window</span>
+              </article>
             </div>
-            <div class="stat">
-                <h2>30k+</h2>
-                <p>Customers</p>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-card">
+              <span class="tag">Signature Drop</span>
+              <img src="./images/close-up-futuristic-sneakers.jpg" alt="Futuristic Thala 7 sneaker" />
             </div>
-            <div class="stat">
-                <h2>High</h2>
-                <p>Quality</p>
+            <div class="floating-note">
+              <p>Featured silhouette</p>
+              <strong>Airframe 07</strong>
+              <span>Lightweight mesh, sculpted midsole, all-day cushioning.</span>
             </div>
-            <div class="stat">
-                <h2>4.5/5</h2>
-                <p>Rating</p>
-            </div>
-        </section>
-       </main>
-       <script src="script.js"></script>
-    </body>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Why This Project Works</p>
+            <h2>Designed to present well in both a resume bullet and a live portfolio demo.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Premium Visual System</h3>
+              <p>
+                A stronger color palette, layered background treatment, typography hierarchy, and
+                sharper card styling make the interface feel intentional.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Consistent Multi-Page Flow</h3>
+              <p>
+                Landing, product, cart, and checkout pages now share one design language, helping
+                the project feel like a complete product instead of separate screens.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Responsive and Readable</h3>
+              <p>
+                The layout scales cleanly from desktop to mobile, with a functional menu and
+                clearer content structure across the purchase journey.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-highlight">
+        <div class="container showcase">
+          <div>
+            <p class="eyebrow">Featured Qualities</p>
+            <h2>Made for people who notice detail.</h2>
+          </div>
+          <div class="showcase-grid">
+            <article class="showcase-card">
+              <span>01</span>
+              <h3>Breathable Upper</h3>
+              <p>Engineered mesh keeps airflow high without sacrificing the sculpted silhouette.</p>
+            </article>
+            <article class="showcase-card">
+              <span>02</span>
+              <h3>Impact Cushioning</h3>
+              <p>Layered foam support built for city wear, light training, and long daily use.</p>
+            </article>
+            <article class="showcase-card">
+              <span>03</span>
+              <h3>Collector Energy</h3>
+              <p>Limited-run styling gives the concept stronger brand personality for demos.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <a class="logo footer-logo" href="index.html">Thala <span>7</span></a>
+          <p>A polished front-end sneaker store concept built with HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="footer-links">
+          <a href="product.html">Shop</a>
+          <a href="cart.html">Cart</a>
+          <a href="payment.html">Checkout</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
-
-
-
-

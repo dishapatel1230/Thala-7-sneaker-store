@@ -1,104 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Payment page for the sneaker store">
-        <title>Payment</title>
-        <link rel="stylesheet" href="payment.css"/>
-        <link rel="stylesheet" href="styles.css"/>
-    </head>
-    <body>
-        <header class="header">
-              <nav class="navbar">
-              <div class="logo">Thala <span>7.</span>
-              </div>
-               <!---Hamburger menu--->
-                 <button class="hamburger" id="menuBtn" aria-label="Open navigation menu" aria-controls="main-menu" aria-expanded="false">
-                        ☰
-                </button>
-                <ul class="nav-links" id="menu">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./product.html">Product</a></li>
-                    <li><a href="./cart.html">Cart</a></li>
-                    <li><a href="./payment.html">Checkout</a></li>
-                </ul>
-             <div class="nav-icons">
-                <input type="text" name="text" placeholder="Search"/>
-                <span>🛒</span>
-                <span>👤</span>
-             </div>
-              </nav>      
-       </header>
-        <section class="checkout-container">
-         <!---Left-->
-         <div class="checkout-left">
-                <p class="sub-heading">Checkout</p>
-                <h2>Contact Details</h2>
-                <label for="email">Email ID</label>
-                <input type ="email"  name="email" id="email" placeholder="Enter your Email Id"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Checkout page for the Thala 7 sneaker storefront with contact, payment, and order summary sections."
+    />
+    <title>Thala 7 | Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Primary navigation">
+        <a class="logo" href="index.html" aria-label="Thala 7 home">Thala <span>7</span></a>
+        <button
+          class="hamburger"
+          id="menuBtn"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a class="active" href="payment.html">Checkout</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="nav-chip" href="cart.html">Back to Cart</a>
+          <a class="nav-icon" href="product.html" aria-label="See product">Shop</a>
+        </div>
+      </nav>
+    </header>
 
-                <h2>Payment</h2>
-                <!--Payment Options-->
-                <div class="payment options">
-                    <button class="active">💳 Card</button>
-                    <button>₿ Crypto</button>
-                    <button>🏦 Bank</button>
-                    <button>⋯</button>      
-                </div>
-                <!--Card Form-->
-                <div class="card-form">
-                   <label for="card-number">Card Number</label>
-                   <input type="text" id="card-number" placeholder="Enter your Card Number"/>
-                   <div class="row">
-                      <div>
-                        <label for="expiry">Expiry Date</label>
-                        <input type="text" id="expiry" placeholder="MM/YY"/>
-                      </div>
-                      <div>
-                        <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" placeholder="Enter CVV"/>
-                      </div>
-                   </div>
-                   <div class="row">
-                       <div>
-                        <label for="country">Country</label>
-                        <select>
-                            <option>India</option>
-                         </select>                      
-                         </div>
-                         <div>
-                            <label for="ZIP">ZIP Code</label>
-                            <input type="text" id="zip" placeholder="XXX-XXX"/>
-                         </div>
-                   </div>
-                </div>
-         </div>
-         <!--Right-->
-         <div class="checkout-right">
-            <h2>Order Summary</h2>
-                <div class="summary-card">
-                    <p class="label">Enter Coupon Code</p>
-                            
-                <div class="coupon">
-                    <input type="text" placeholder="COUPON CODE">
-                    <button>Apply Coupon</button>
-                </div>
+    <main class="page-shell">
+      <section class="container checkout-layout">
+        <div class="checkout-left panel">
+          <div class="page-intro">
+            <p class="eyebrow">Final Step</p>
+            <h1>Clean checkout UI with stronger hierarchy and professional polish.</h1>
+          </div>
 
-                <div class="summary">
-                    <div><span>Sub Total</span><span>₹4,700</span></div>
-                    <div><span>Taxes (if applicable)</span><span>₹199</span></div>
-                    <div><span>Discount</span><span>₹0</span></div>
-                    <div class="total"><span>Total</span><span>₹4,999</span></div>
-                </div>
-                </div>
-                 <button class="pay-btn">Pay Now ₹4,999</button>
+          <form class="checkout-form">
+            <div class="input-grid">
+              <label>
+                <span>Full Name</span>
+                <input type="text" placeholder="Enter your full name" />
+              </label>
+              <label>
+                <span>Email Address</span>
+                <input type="email" placeholder="you@example.com" />
+              </label>
+            </div>
 
-                <div class="payment-icons">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Razorpay_logo.svg">
-                </div>
-         </div>
-        </section>
-        <script src="script.js"></script>
-    </body>
+            <label>
+              <span>Shipping Address</span>
+              <input type="text" placeholder="Flat number, street, area" />
+            </label>
+
+            <div class="payment-options" aria-label="Payment methods">
+              <button type="button" class="active">Card</button>
+              <button type="button">UPI</button>
+              <button type="button">Bank</button>
+              <button type="button">Wallet</button>
+            </div>
+
+            <label>
+              <span>Card Number</span>
+              <input type="text" placeholder="1234 5678 9012 3456" />
+            </label>
+
+            <div class="input-grid">
+              <label>
+                <span>Expiry Date</span>
+                <input type="text" placeholder="MM / YY" />
+              </label>
+              <label>
+                <span>CVV</span>
+                <input type="text" placeholder="123" />
+              </label>
+            </div>
+
+            <div class="input-grid">
+              <label>
+                <span>Country</span>
+                <select>
+                  <option>India</option>
+                  <option>United Arab Emirates</option>
+                  <option>Singapore</option>
+                </select>
+              </label>
+              <label>
+                <span>Postal Code</span>
+                <input type="text" placeholder="600001" />
+              </label>
+            </div>
+          </form>
+        </div>
+
+        <aside class="checkout-right panel">
+          <h2>Order Summary</h2>
+          <p class="summary-text">Everything important stays visible without cluttering the payment form.</p>
+
+          <div class="summary-list">
+            <div><span>Airframe 07 Electric Coral</span><span>Rs. 4,999</span></div>
+            <div><span>Airframe 07 Shadow Grey</span><span>Rs. 4,299</span></div>
+            <div><span>Tax</span><span>Rs. 701</span></div>
+            <div><span>Shipping</span><span>Free</span></div>
+            <div class="total-row"><span>Total</span><span>Rs. 9,999</span></div>
+          </div>
+
+          <div class="trust-points">
+            <div>
+              <strong>Encrypted checkout</strong>
+              <span>Designed with secure-payment cues for realism.</span>
+            </div>
+            <div>
+              <strong>Fast fulfillment</strong>
+              <span>Estimated dispatch within 24 hours of confirmation.</span>
+            </div>
+          </div>
+
+          <button class="btn btn-primary pay-btn" type="button">Pay Now</button>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <a class="logo footer-logo" href="index.html">Thala <span>7</span></a>
+          <p>End-to-end static shopping flow refined for demo quality and portfolio storytelling.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="product.html">Product</a>
+          <a href="cart.html">Cart</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

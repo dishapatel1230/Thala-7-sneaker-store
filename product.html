@@ -1,85 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover our exclusive sneaker collection! Shop the latest styles and limited releases.">
-    <title>Exclusive Sneaker Collection</title>
-    <link rel="stylesheet" href="product.css"/>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-     <header class="header">
-              <nav class="navbar">
-              <div class="logo">Thala <span>7.</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the featured Thala 7 sneaker with product imagery, specs, pricing, and cart actions."
+    />
+    <title>Thala 7 | Product Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Primary navigation">
+        <a class="logo" href="index.html" aria-label="Thala 7 home">Thala <span>7</span></a>
+        <button
+          class="hamburger"
+          id="menuBtn"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="product.html">Product</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="payment.html">Checkout</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="nav-chip" href="index.html">Back to Home</a>
+          <a class="nav-icon" href="cart.html" aria-label="View cart">Cart</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <p class="page-breadcrumb">Home / Collection / Airframe 07</p>
+
+        <section class="product-layout">
+          <div class="product-gallery panel">
+            <div class="product-badge-row">
+              <span class="pill">Best Seller</span>
+              <span class="pill pill-dark">Free Shipping</span>
+            </div>
+            <div class="main-image-frame">
+              <img
+                id="main-image"
+                src="./images/shoe.webp"
+                alt="Thala 7 Airframe 07 sneaker"
+              />
+            </div>
+            <div class="thumbnails" aria-label="Product image thumbnails">
+              <button class="thumb active" type="button">
+                <img src="./images/shoe.webp" alt="Main sneaker view" onclick="changeImage(this)" />
+              </button>
+              <button class="thumb" type="button">
+                <img src="./images/shoe1.webp" alt="Sneaker side angle" onclick="changeImage(this)" />
+              </button>
+              <button class="thumb" type="button">
+                <img src="./images/shoe2.webp" alt="Sneaker sole detail" onclick="changeImage(this)" />
+              </button>
+              <button class="thumb" type="button">
+                <img src="./images/shoe3.webp" alt="Sneaker heel detail" onclick="changeImage(this)" />
+              </button>
+              <button class="thumb" type="button">
+                <img src="./images/shoe4.webp" alt="Sneaker top view" onclick="changeImage(this)" />
+              </button>
+            </div>
+          </div>
+
+          <div class="product-details panel">
+            <p class="eyebrow">Thala 7 Performance Series</p>
+            <h1>Airframe 07 Multi-Surface Running Sneakers</h1>
+            <p class="product-description">
+              Built for lightweight city runs and everyday wear, the Airframe 07 combines a
+              breathable mesh upper, sculpted foam cushioning, and durable outsole grip in a bold
+              multicolor silhouette.
+            </p>
+
+            <div class="price-row">
+              <div>
+                <strong class="price">Rs. 4,999</strong>
+                <p class="price-note">Inclusive of all taxes</p>
               </div>
-               <!---Hamburger menu--->
-                 <button class="hamburger" id="menuBtn" aria-label="Open navigation menu" aria-controls="main-menu" aria-expanded="false">
-                        ☰
-                </button>
-                <ul class="nav-links" id="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html">Product</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="payment.html">Checkout</a></li>
-                </ul>
-             <div class="nav-icons">
-                <input type="text" name="text" placeholder="Search"/>
-                <span>🛒</span>
-                <span>👤</span>
-             </div>
-              </nav>      
-       </header>
+              <span class="discount-chip">Save 12%</span>
+            </div>
 
-<!-- Breadcrumb -->
-<div class="breadcrumb">
-  Home > THALA FOR A REASON > Product
-</div>
- <!-- Product Section -->
-<section class="product">
+            <div class="info-grid">
+              <article>
+                <span>Category</span>
+                <strong>Running / Lifestyle</strong>
+              </article>
+              <article>
+                <span>Support</span>
+                <strong>Neutral Cushion</strong>
+              </article>
+              <article>
+                <span>Colorway</span>
+                <strong>Electric Coral</strong>
+              </article>
+              <article>
+                <span>Delivery</span>
+                <strong>2-4 Business Days</strong>
+              </article>
+            </div>
 
-  <!-- LEFT -->
-  <div class="product-images">
-    <div class="main-image">
-      <img src="./images/shoe.webp" alt="shoe"/>
-    </div>
-      <div class="thumbnails">
-      <img src="./images/shoe.webp" alt="shoe-image" onclick="changeImage(this)">
-      <img src="./images/shoe1.webp" alt="shoe-image" onclick="changeImage(this)">
-      <img src="./images/shoe2.webp" alt="shoe-image" onclick="changeImage(this)">
-      <img src="./images/shoe3.webp" alt="shoe-image" onclick="changeImage(this)">
-      <img src="./images/shoe4.webp" alt="shoe-image" onclick="changeImage(this)">
-    </div>
-  </div>
+            <div class="purchase-row">
+              <label class="select-wrap">
+                <span>Quantity</span>
+                <select aria-label="Select quantity">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </label>
+              <a class="btn btn-primary add-cart-btn" href="cart.html">Add to Cart</a>
+            </div>
 
-  <!-- RIGHT -->
-  <div class="product-details">
-    <h1>
-      Seven By M.S.Dhoni Women's Hogun Multi-Color Running Shoes
-    </h1>
+            <div class="spec-list">
+              <div>
+                <strong>Engineered mesh upper</strong>
+                <span>For better airflow and reduced bulk.</span>
+              </div>
+              <div>
+                <strong>Dual-density midsole</strong>
+                <span>Balances soft landing with energy return.</span>
+              </div>
+              <div>
+                <strong>Textured rubber outsole</strong>
+                <span>Improves traction for everyday movement.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
 
-    <p class="desc">
-      For exceptional fit, feel and smooth transitions get going with these dual mid sole technology shoes constructed with molded EVA sock liner, great heel area, rubber outsole, fused upper and breathable...
-    </p>
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <a class="logo footer-logo" href="index.html">Thala <span>7</span></a>
+          <p>Crafted as a polished front-end case study for resume and portfolio presentation.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="cart.html">Cart</a>
+          <a href="payment.html">Checkout</a>
+        </div>
+      </div>
+    </footer>
 
-    <div class="price-box">
-      <span class="price">₹ 1,334</span>
-      <span class="save">Save 12%</span>
-    </div>
-
-    <p class="tax">Inclusive of all Taxes</p>
-
-    <div class="actions">
-      <select>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-      </select>
-
-      <button  onclick="location.href='cart.html'" class="cart-btn">🛒 ADD TO CART</button>
-    </div>
-  </div>
-</section>
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

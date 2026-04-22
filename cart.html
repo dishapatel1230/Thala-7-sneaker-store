@@ -1,89 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your shopping cart">
-    <title>Shopping Cart</title>
-    <link rel="stylesheet" href="cart.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-     <header class="header">
-              <nav class="navbar">
-              <div class="logo">Thala <span>7.</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Review selected products and order summary in the Thala 7 shopping cart." />
+    <title>Thala 7 | Shopping Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Primary navigation">
+        <a class="logo" href="index.html" aria-label="Thala 7 home">Thala <span>7</span></a>
+        <button
+          class="hamburger"
+          id="menuBtn"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a class="active" href="cart.html">Cart</a></li>
+          <li><a href="payment.html">Checkout</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="nav-chip" href="product.html">Continue Shopping</a>
+          <a class="nav-icon" href="payment.html" aria-label="Go to checkout">Pay</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="container cart-layout">
+        <div class="cart-left">
+          <div class="page-intro">
+            <p class="eyebrow">Your Selected Drop</p>
+            <h1>Shopping cart built for a smooth checkout handoff.</h1>
+          </div>
+
+          <div class="cart-list panel">
+            <article class="cart-item-card">
+              <img src="./images/shoe.webp" alt="Airframe 07 sneaker" />
+              <div class="cart-item-copy">
+                <h2>Airframe 07 Electric Coral</h2>
+                <p>Breathable upper, sculpted midsole, everyday traction.</p>
+                <span class="cart-meta">Size UK 8 | Delivery in 2-4 days</span>
               </div>
-               <!---Hamburger menu--->
-                 <button class="hamburger" id="menuBtn" aria-label="Open navigation menu" aria-controls="main-menu" aria-expanded="false">
-                        ☰
-                </button>
-                <ul class="nav-links" id="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html">Product</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="payment.html">Checkout</a></li>
-                </ul>
-             <div class="nav-icons">
-                <input type="text" name="text" placeholder="Search"/>
-                <span>🛒</span>
-                <span>👤</span>
-             </div>
-              </nav>      
-      </header>
-      <section class="cart-container">
-       <!--Left-->
-       <div class="cart-left">
-           <h2>Shopping Cart</h2>
-           <div class="cart-table">
-                <div class="cart-header">
-                    <span>Product</span>
-                    <span>Price</span>
-                    <span>Quantity</span>
-                </div>
-                 <!-- ITEM -->
-                <div class="cart-item">
-                    <span>Seven By M.S.Dhoni W...</span>
-                    <div class="qty">- 1 +</div>
-                    <span>₹4,999</span>
-                    <span class="remove">✖</span>
-                </div>
-                <div class="cart-item">
-                    <span>Seven By M.S.Dhoni W...</span>
-                    <div class="qty">- 1 +</div>
-                    <span>₹4,999</span>
-                    <span class="remove">✖</span>
-                </div>
+              <div class="cart-item-actions">
+                <strong>Rs. 4,999</strong>
+                <div class="qty-pill" aria-label="Quantity 1">- 1 +</div>
+                <button type="button" class="text-link">Remove</button>
+              </div>
+            </article>
 
-                <div class="cart-item">
-                    <span>Seven By M.S.Dhoni W...</span>
-                    <div class="qty">- 1 +</div>
-                    <span>₹4,999</span>
-                    <span class="remove">✖</span>
-                </div>
-           </div>
-                  <a href="index.html" class="continue">← Continue Shopping</a>
-       </div>
-       <div class="cart-right">
-                <div class="summary-card">
-                <p class="label">Enter Coupon Code</p>
-                <div class="coupon">
-                    <input type="text" placeholder="COUPON CODE">
-                    <button>Apply Coupon</button>
-                </div>
-                <div class="summary">
-                    <div><span>Sub Total</span><span>₹4,700</span></div>
-                    <div><span>Taxes (if applicable)</span><span>₹199</span></div>
-                    <div><span>Discount</span><span>₹0</span></div>
-                    <div class="total"><span>Total</span><span>₹4,999</span></div>
-                </div>
-                </div>
-                <button class="pay-btn">Pay Now ₹4,999</button>
-                <div class="payment-icons">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Razorpay_logo.svg" alt="razorpay">
-                </div>
+            <article class="cart-item-card">
+              <img src="./images/shoe3.webp" alt="Airframe 07 sneaker alternate angle" />
+              <div class="cart-item-copy">
+                <h2>Airframe 07 Shadow Grey</h2>
+                <p>Same platform with a muted collector-style color finish.</p>
+                <span class="cart-meta">Size UK 9 | Ships next business day</span>
+              </div>
+              <div class="cart-item-actions">
+                <strong>Rs. 4,299</strong>
+                <div class="qty-pill" aria-label="Quantity 1">- 1 +</div>
+                <button type="button" class="text-link">Remove</button>
+              </div>
+            </article>
+          </div>
 
-       </div>
+          <a class="back-link" href="product.html">Return to product page</a>
+        </div>
+
+        <aside class="cart-right">
+          <div class="summary-card panel">
+            <h2>Order Summary</h2>
+            <p class="summary-text">Coupon UI and totals card aligned to a modern checkout pattern.</p>
+            <div class="coupon-row">
+              <input type="text" placeholder="Enter coupon code" aria-label="Coupon code" />
+              <button type="button" class="btn btn-secondary">Apply</button>
+            </div>
+
+            <div class="summary-list">
+              <div><span>Subtotal</span><span>Rs. 9,298</span></div>
+              <div><span>Shipping</span><span>Free</span></div>
+              <div><span>Tax</span><span>Rs. 701</span></div>
+              <div><span>Discount</span><span>- Rs. 500</span></div>
+              <div class="total-row"><span>Total</span><span>Rs. 9,499</span></div>
+            </div>
+
+            <a class="btn btn-primary pay-btn" href="payment.html">Proceed to Checkout</a>
+            <p class="secure-note">Secure payment experience with card, bank, and wallet-ready UI states.</p>
+          </div>
+        </aside>
       </section>
-      <script src="script.js"></script>
-</body>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <a class="logo footer-logo" href="index.html">Thala <span>7</span></a>
+          <p>Static front-end flow focused on layout, clarity, and polished presentation.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="product.html">Product</a>
+          <a href="payment.html">Checkout</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
